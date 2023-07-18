@@ -1,0 +1,16 @@
+{% extends 'cart/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+            {% lorem 2 b random %}
+        </p>
+    </div>
+</div>
+{% endblock main-content %}

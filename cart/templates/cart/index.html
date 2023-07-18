@@ -1,0 +1,118 @@
+{% extends 'cart/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'cart/images/banner/b5.jpeg' %} " class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'cart/images/banner/b2.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'cart/images/banner/b3.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'cart/images/banner/b4.jpeg' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+{% endblock banner-slider %}
+
+{% block information %}
+  <div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+      <h1>ABC XYZ</h1>
+      <small class="fs-5">
+        Men’s storytelling has evolved, albeit it still has a long way to go to match the volume of the narrative coming out of women’s. This season a number of design houses stepped up and created winning campaigns that elevated the over-all field and raised the bar for next season. Here our Chief Impressionist, Kenneth Richard, discusses The Best Men’s Fashion Ad Campaigns of Fall 2019.
+      </small>
+    </div>
+  </div>
+{% endblock information %}
+
+{% block main-content %}
+  <div class="container">
+    <h2 class="text-center">Welcome to RAH</h2>
+    <br><br>
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+      data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s;
+      animation-name: none;">
+        <div class="goodnesssec dress shirt">
+          <a href="{% url 'category' 'SH' %}">
+            <div class="goodnessseccont text-center">
+              <img src= "{% static 'cart/images/product/p1.jpg' %}" class="img-responsive" alt="">
+              <p class="shir">Shirt</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+      data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s;
+      animation-name: none;">
+        <div class="goodnesssec dress t-shirt">
+          <a href="{% url 'category' 'TS' %}">
+            <div class="goodnessseccont text-center">
+              <img src= "{% static 'cart/images/product/p2.jpeg' %}" class="img-responsive" alt="">
+              <p class="shir">T-Shirt</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+      data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s;
+      animation-name: none;">
+        <div class="goodnesssec dress jeans">
+          <a href="{% url 'category' 'JE' %}">
+            <div class="goodnessseccont text-center">
+              <img src= "{% static 'cart/images/product/p4.jpeg' %}" class="img-responsive" alt="">
+              <p class="shir">Jeans</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+      data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s;
+      animation-name: none;">
+        <div class="goodnesssec dress shirt">
+          <a href="{% url 'category' 'SR' %}">
+            <div class="goodnessseccont text-center">
+              <img src= "{% static 'cart/images/product/p5.jpeg' %}" class="img-responsive" alt="">
+              <p class="shir">Shorts</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+      data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s;
+      animation-name: none;">
+        <div class="goodnesssec dress t-shirt">
+          <a href="{% url 'category' 'PA' %}">
+            <div class="goodnessseccont text-center">
+              <img src= "{% static 'cart/images/product/p3.jpeg' %}" class="img-responsive" alt="">
+              <p class="shir">Pants</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <br/><br/>
+{% endblock main-content %}
